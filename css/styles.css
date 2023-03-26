@@ -1,0 +1,139 @@
+:root {
+  --text-color: #000000;
+  --first-color: #ffffff;
+  --second-color: #2196f3;
+  --secon-black: #212121;
+  --color-grey: #757575;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+}
+.backgroud {
+  background-color: #2f303a;
+}
+.address,
+.black-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  font-style: normal;
+}
+.address {
+  color: var(--color-grey);
+}
+.address:hover,
+.address:focus {
+  color: var(--second-color);
+}
+.black-header {
+  color: var(--secon-black);
+}
+.black-header:hover,
+.black-header:focus {
+  color: var(--second-color);
+}
+.first-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 4.2;
+  text-align: center;
+  color: var(--secon-black);
+  list-style-type: none;
+}
+.header-style,
+.footer-style {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 3.1;
+}
+.header-style {
+  color: var(--text-color);
+}
+.footer-style {
+  color: var(--first-color);
+}
+
+.blue-logo {
+  color: var(--second-color);
+}
+.big-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 6;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--first-color);
+}
+.lorem-ipsum {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--secon-black);
+}
+.lorem-text {
+  font-size: 14px;
+  line-height: 2.4;
+  color: var(--color-grey);
+}
+.name,
+.position {
+  line-height: 1.9;
+}
+.name {
+  color: var(--secon-black);
+}
+.position {
+  color: var(--color-grey);
+}
+.customers {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 3.6;
+  letter-spacing: 0.06em;
+  color: var(--secon-black);
+}
+.first-button {
+  background: var(--second-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--first-color);
+  font-weight: 700;
+  line-height: 3;
+  letter-spacing: 0.06em;
+}
+.second-button {
+  background: #f5f4fa;
+  border-radius: 4px;
+  font-weight: 500;
+  line-height: 2.6;
+  text-align: center;
+  color: var(--secon-black);
+}
+.second-button:hover,
+.second-button:focus {
+  background: var(--second-color);
+  color: var(--first-color);
+}
+.footer-adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2.4;
+  color: var(--first-color);
+}
+.footer-adress:hover,
+.footer-adress:focus {
+  color: var(--second-color);
+}
