@@ -11,58 +11,69 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <a class="header-style" href="index.html"><span class="blue-logo">Web</span>Studio</a>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html" class="black-header">Agencja</a>
-          </li>
-          <li>
-            <a href="portfolio.html" class="black-header">Portfolio</a>
-          </li>
-          <li>
-            <a href="#" class="black-header">Kontakt</a>
-          </li>
+      <div class="container header-container">
+        <a class="header-style" href="index.html"><span class="blue-logo">Web</span>Studio</a>
+        <nav>
+          <ul class="navigation">
+            <li class="navigation-item">
+              <a href="index.html" class="black-header">Agencja</a>
+            </li>
+            <li>
+              <a href="portfolio.html" class="black-header">Portfolio</a>
+            </li>
+            <li>
+              <a href="#" class="black-header">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact">
+          <li><a href="mailto:info@devstudio.com" class="address">info@devstudio.com</a></li>
+          <li><a href="tel:+48111111111" class="address">+48 111 111 111</a></li>
         </ul>
-      </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com" class="address">info@devstudio.com</a></li>
-        <li><a href="tel:+48111111111" class="address">+48 111 111 111</a></li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section class="backgroud">
-        <h1 class="big-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button" class="first-button">Zamów usługę</button>
-      </section>
+      <div class="backgroud">
+        <section class="big-container container">
+          <h1 class="big-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <button type="button" class="first-button">Zamów usługę</button>
+        </section>
+      </div>
       <section>
-        <ul>
-          <li>
+        <ul class="lorem-list container">
+          <li class="lorem-item">
             <h3 class="lorem-ipsum">LOREM IPSUM</h3>
             <p class="lorem-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="lorem-item">
             <h3 class="lorem-ipsum">LOREM IPSUM</h3>
             <p class="lorem-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="lorem-item">
             <h3 class="lorem-ipsum">LOREM IPSUM</h3>
             <p class="lorem-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="lorem-item">
             <h3 class="lorem-ipsum">LOREM IPSUM</h3>
             <p class="lorem-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -73,16 +84,16 @@
       </section>
       <section>
         <h2 class="first-header">Czym się zajmujemy</h2>
-        <ul>
+        <ul class="job-list container">
           <li><img alt="Programowanie" width="370" height="294" src="images/img1.jpg" /></li>
           <li><img alt="Aplikacje" width="370" height="294" src="images/img2.jpg" /></li>
           <li><img alt="Tablety" width="370" height="294" src="images/img3.jpg" /></li>
         </ul>
       </section>
-      <section>
+      <section class="squad">
         <h2 class="first-header">Nasz zespół</h2>
-        <ul>
-          <li>
+        <ul class="job-list container">
+          <li class="squad-item">
             <figure>
               <img alt="Mężczyzna" width="270" height="260" src="images/img4.jpg" />
               <figcaption>
@@ -92,7 +103,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="squad-item">
             <figure>
               <img alt="Kobieta" width="270" height="260" src="images/img5.jpg" />
               <figcaption>
@@ -102,7 +113,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="squad-item">
             <figure>
               <img alt="Mężczyzna" width="270" height="260" src="images/img6.jpg" />
               <figcaption>
@@ -112,7 +123,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="squad-item">
             <figure>
               <img alt="Mężczyzna" width="270" height="260" src="images/img7.jpg" />
               <figcaption>
@@ -125,16 +136,18 @@
       </section>
     </main>
     <footer class="backgroud">
-      <a class="footer-style" href="index.html"><span class="blue-logo">Web</span>Studio</a>
-      <address>
-        <ul>
-          <li>
-            <p class="footer-adress">m. Warszawa, Aleje Jerozolimskie 21</p>
-          </li>
-          <li><a class="address" href="mailto:info@example.com">info@example.com</a></li>
-          <li><a class="address" href="tel:+48111111111">+48 111 111 111</a></li>
-        </ul>
-      </address>
+      <div class="container footer-container">
+        <a class="footer-style" href="index.html"><span class="blue-logo">Web</span>Studio</a>
+        <address>
+          <ul>
+            <li>
+              <p class="footer-adress">m. Warszawa, Aleje Jerozolimskie 21</p>
+            </li>
+            <li><a class="address" href="mailto:info@example.com">info@example.com</a></li>
+            <li><a class="address" href="tel:+48111111111">+48 111 111 111</a></li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
