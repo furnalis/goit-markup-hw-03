@@ -6,6 +6,7 @@
   --color-grey: #757575;
   --color-header-line: rgba(236, 236, 236, 1);
   --color-border-line: #eeeeee;
+  --font-primary: 'Roboto', sans-serif;
 }
 
 * {
@@ -14,7 +15,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-primary);
   letter-spacing: 0.03em;
 }
 a {
@@ -33,7 +34,7 @@ button {
 .black-header {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 2.4;
   letter-spacing: 0.02em;
   font-style: normal;
 }
@@ -52,8 +53,7 @@ button {
   color: var(--second-color);
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 .first-header {
   font-weight: 700;
@@ -61,7 +61,6 @@ button {
   line-height: 4.2;
   text-align: center;
   color: var(--secon-black);
-  list-style-type: none;
 }
 .header-style,
 .footer-style {
@@ -69,15 +68,15 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 3.1;
-  margin-right: 93px;
 }
 .header-style {
   color: var(--text-color);
+  margin-right: 93px;
 }
-.footer-style {
-  color: var(--first-color);
+.header-contact {
+  display: flex;
+  gap: 50px;
 }
-
 .blue-logo {
   color: var(--second-color);
 }
@@ -100,7 +99,6 @@ button {
   color: var(--secon-black);
 }
 .lorem-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -127,16 +125,13 @@ button {
   letter-spacing: 0.06em;
   color: var(--secon-black);
 }
-
 .project-type {
   color: var(--color-grey);
   line-height: 1.9;
 }
-
 .first-button {
   background: var(--second-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   color: var(--first-color);
   font-weight: 700;
   line-height: 1.9;
@@ -144,9 +139,10 @@ button {
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   padding: 10px 41px 10px 42px;
   margin-bottom: 200px;
+  border: none;
+  border-radius: 4px;
 }
 .second-button {
   background: #f5f4fa;
@@ -167,84 +163,52 @@ button {
   background: var(--second-color);
   color: var(--first-color);
 }
-.footer-adress {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 2.4;
-  color: var(--first-color);
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-}
-.footer-adress:hover,
-.footer-adress:focus {
-  color: var(--second-color);
-}
-
 header {
   border-bottom: 1px solid var(--color-header-line);
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
 }
-
 .header-container {
   display: flex;
   align-items: center;
 }
-
 .navigation {
   display: flex;
   gap: 46px;
   margin-right: 371px;
   padding: 32px 0;
 }
-
 .big-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
-
 .lorem-item {
   width: 270px;
 }
-
 .lorem-list {
   display: flex;
   gap: 30px;
-  margin-top: 94px;
-  margin-bottom: 94px;
   justify-content: center;
 }
-
 .job-list {
   display: flex;
   gap: 30px;
   justify-content: center;
   padding-bottom: 94px;
 }
-
 .squad {
   background: #f5f4fa;
 }
-
 .squad-item {
   background-color: var(--first-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .menu {
   display: flex;
   justify-content: center;
@@ -252,7 +216,6 @@ header {
   margin-top: 94px;
   margin-bottom: 50px;
 }
-
 .project {
   display: flex;
   flex-wrap: wrap;
@@ -261,18 +224,33 @@ header {
   align-items: center;
   margin-bottom: 94px;
 }
-
 .project-description {
-  border-right: 1px solid var(--color-border-line);
-  border-left: 1px solid var(--color-border-line);
-  border-bottom: 1px solid var(--color-border-line);
+  border: 1px solid var(--color-border-line);
+  border-top: none;
   display: flex;
   flex-direction: column;
   gap: 4px;
   padding: 20px 24px;
 }
+.footer-style {
+  color: var(--first-color);
+}
 
-.header-contact {
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--first-color);
   display: flex;
-  gap: 50px;
+  flex-direction: column;
+  gap: 9px;
+}
+.footer-adress:hover,
+.footer-adress:focus {
+  color: var(--second-color);
 }
