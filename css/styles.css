@@ -34,7 +34,7 @@ button {
 .black-header {
   font-weight: 500;
   font-size: 14px;
-  line-height: 2.4;
+  line-height: 1.7;
   letter-spacing: 0.02em;
   font-style: normal;
 }
@@ -58,7 +58,16 @@ button {
 .first-header {
   font-weight: 700;
   font-size: 36px;
-  line-height: 4.2;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--secon-black);
+  margin-bottom: 50px;
+}
+
+.second-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
   text-align: center;
   color: var(--secon-black);
 }
@@ -71,7 +80,6 @@ button {
 }
 .header-style {
   color: var(--text-color);
-  margin-right: 93px;
 }
 .header-contact {
   display: flex;
@@ -97,12 +105,13 @@ button {
   line-height: 1.6;
   text-transform: uppercase;
   color: var(--secon-black);
+  margin-bottom: 10px;
 }
 .lorem-text {
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   color: var(--color-grey);
+  letter-spacing: 0.03em;
 }
 .name,
 .position {
@@ -136,7 +145,6 @@ button {
   font-weight: 700;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  display: flex;
   align-items: center;
   text-align: center;
   padding: 10px 41px 10px 42px;
@@ -154,7 +162,6 @@ button {
   font-size: 16px;
   line-height: 26px;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secon-black);
   padding: 6px 22px;
 }
@@ -174,6 +181,7 @@ header {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .navigation {
   display: flex;
@@ -185,7 +193,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 30px;
+  height: 600px;
 }
 .lorem-item {
   width: 270px;
@@ -194,12 +204,12 @@ header {
   display: flex;
   gap: 30px;
   justify-content: center;
+  margin-bottom: 94px;
 }
 .job-list {
   display: flex;
   gap: 30px;
   justify-content: center;
-  padding-bottom: 94px;
 }
 .squad {
   background: #f5f4fa;
@@ -210,11 +220,14 @@ header {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
+.section-bottom {
+  margin-top: 94px;
+}
 .menu {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 .project {
@@ -223,7 +236,6 @@ header {
   gap: 30px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 94px;
 }
 .project-description {
   border: 1px solid var(--color-border-line);
