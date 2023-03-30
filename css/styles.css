@@ -7,6 +7,7 @@
   --color-header-line: rgba(236, 236, 236, 1);
   --color-border-line: #eeeeee;
   --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Raleway';
 }
 
 * {
@@ -73,7 +74,7 @@ button {
 }
 .header-style,
 .footer-style {
-  font-family: 'Raleway';
+  font-family: var(--font-secondary);
   font-weight: 700;
   font-size: 26px;
   line-height: 3.1;
